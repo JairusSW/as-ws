@@ -18,8 +18,8 @@
   "devDependencies": {
     "assemblyscript": "^0.18.16"
   },
-  "name": "as-udp",
-  "description": "UDP bindings for AssemblyScript",
+  "name": "as-ws",
+  "description": "WebSocket bindings for AssemblyScript",
   "version": "1.0.0",
   "types": "./assembly/index.ts",
   "directories": {
@@ -27,19 +27,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JairusSW/as-udp.git"
+    "url": "git+https://github.com/JairusSW/as-ws.git"
   },
   "keywords": [
-    "udp",
+    "WebSocket",
     "assemblyscript",
     "socket",
     "bindings",
-    "dgram"
+    "ws"
   ],
   "author": "JairusSW",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JairusSW/as-udp/issues"
+    "url": "https://github.com/JairusSW/as-ws/issues"
   },
-  "homepage": "https://github.com/JairusSW/as-udp#readme"
+  "homepage": "https://github.com/JairusSW/as-ws#readme"
 }
