@@ -14,7 +14,7 @@
   "devDependencies": {
     "assemblyscript": "^0.18.16"
   },
-  "name": "as-ws",
+  "name": "as-websocket",
   "description": "WebSocket bindings for AssemblyScript",
   "version": "1.0.0",
   "types": "./assembly/index.ts",
