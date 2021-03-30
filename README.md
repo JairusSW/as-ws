@@ -3,8 +3,7 @@
 
 ## Setting up
 
-1. Enable As-bind
-2. Add --exportTable flag
+- Add --exportTable and ----exportRuntime flags
 
 ## Usage
 
@@ -16,7 +15,7 @@ import { WebSocket } from 'as-ws'
 const socket = new WebSocket('ws://localhost:3000')
 
 socket.on('message', (data) => {
-//--> Only supports incoming numbers
+
     console.log('Message: ' + data)
 
 })
