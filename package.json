@@ -1,11 +1,7 @@
 {
   "dependencies": {
     "@assemblyscript/loader": "^0.18.16",
-    "as-bind": "^0.6.1",
-    "as-bitray": "^2.4.1",
-    "as-console": "^3.0.0",
     "assemblyscript": "^0.18.17",
-    "bitray": "^2.1.1",
     "ws": "^7.4.4"
   },
   "scripts": {
