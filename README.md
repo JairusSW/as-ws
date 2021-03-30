@@ -3,7 +3,7 @@
 
 ## Setting up
 
-- Add --exportTable and ----exportRuntime flags
+- Add --exportTable and --exportRuntime flags
 
 ## Usage
 
