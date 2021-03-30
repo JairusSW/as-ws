@@ -10,7 +10,7 @@ socket.on('connection', (client) => {
 
   client.on('message', (data) => {
 
-    console.log('Got Message:', data)
+    console.log('Got Message:', data.toString())
 
     client.send('123456789')
 
