@@ -12,7 +12,7 @@ socket.on('connection', (client) => {
 
     console.log('Got Message:', data.toString())
 
-    client.send('123456789')
+    client.send('Hello, AssemblyScript!')
 
   })
 

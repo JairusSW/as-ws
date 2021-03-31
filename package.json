@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "@assemblyscript/loader": "^0.18.16",
-    "assemblyscript": "^0.18.17",
+    "@assemblyscript/loader": "^0.18.19",
+    "assemblyscript": "^0.18.19",
     "ws": "^7.4.4"
   },
   "scripts": {
-    "asbuild:untouched": "asc ./node_modules/as-bind/lib/assembly/as-bind.ts assembly/index.ts --target debug --runtime incremental --exportRuntime --exportTable",
-    "asbuild:optimized": "asc ./node_modules/as-bind/lib/assembly/as-bind.ts assembly/index.ts --target release --runtime incremental --exportRuntime --exportTable",
+    "asbuild:untouched": "asc assembly/WebSocket.ts --target debug --exportRuntime --exportTable",
+    "asbuild:optimized": "asc assembly/WebSocket.ts --target release --exportRuntime --exportTable",
     "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
     "test": "node tests",
     "start": "node server.js"
@@ -17,7 +17,7 @@
   "name": "as-websocket",
   "description": "WebSocket bindings for AssemblyScript",
   "version": "1.0.0",
-  "types": "./assembly/index.ts",
+  "types": "./assembly/WebSocket.ts",
   "directories": {
     "test": "tests"
   },

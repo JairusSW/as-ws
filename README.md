@@ -5,6 +5,25 @@
 
 **Add --exportTable and --exportRuntime flags**
 
+**Edit main file**
+
+```js
+// main.js
+
++ let wasmModule
+
++ const wsImports = require('as-websocket')
+
+const imports = {
+    ...eval(wsImports)
+}
+
+- const wasmModule = loader.instantaniateSync()
+
++ wasmModule = loader.instantaniateSync()
+
+```
+
 ## Usage
 
 **AssemblyScript WebSocket**

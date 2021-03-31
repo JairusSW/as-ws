@@ -1,7 +1,3 @@
-import { Bitray } from 'as-bitray'
-
-import { console } from 'as-console'
-
 // JS Imports
 declare function sendWS(id: i32, data: Uint8Array): void
 declare function initWS(address: string): i32
@@ -9,6 +5,7 @@ declare function closeWS(id: i32, number: number): void
 declare function sendPointer(id: number, event: string, pointer: i32): void
 // Miscellanious
 
+import { console } from './console/Console'
 // API
 export class WebSocket {
 
@@ -38,11 +35,10 @@ export class WebSocket {
 
   }
 
-  // WIP: Add string support for as-bind
-  on(event: string, callback: (data: number) => void): void {
+  on(event: string, callback: (data: string) => void): void {
 
     sendPointer(this.id, event, load<i32>(changetype<usize>(callback)))
-    // NOTE: Does not call every time! Only calls if once.
+    // NOTE: Does not call every time! Only calls once.
   }
   
 }
@@ -57,7 +53,7 @@ export function test(): void {
 
   socket.on('message', (data) => {
 
-    console.log('Response (AS): ' + data.toString())
+    console.log('Response (AS): ' + data)
     
   })
 
