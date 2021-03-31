@@ -4,7 +4,7 @@ const loader = require('@assemblyscript/loader');
 
 let wasmModule
 
-const wsImports = require('./imports')
+const wsImports = require('./import')
 
 const imports = {
     ...eval(wsImports),

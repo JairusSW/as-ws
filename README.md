@@ -12,7 +12,7 @@
 
 + let wasmModule
 
-+ const wsImports = require('as-websocket')
++ const wsImports = require('as-websocket/import')
 
 const imports = {
     ...eval(wsImports)
