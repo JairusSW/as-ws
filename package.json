@@ -16,7 +16,7 @@
   },
   "name": "as-websocket",
   "description": "WebSocket bindings for AssemblyScript",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./imports",
   "types": "./assembly/WebSocket.ts",
   "directories": {
