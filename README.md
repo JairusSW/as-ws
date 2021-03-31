@@ -29,9 +29,9 @@ const imports = {
 **AssemblyScript WebSocket**
 
 ```js
-import { WebSocket } from 'as-ws'
+import { asWebSocket } from 'as-ws'
 
-const socket = new WebSocket('ws://localhost:3000')
+const socket = new asWebSocket('ws://localhost:3000')
 
 socket.on('message', (data) => {
 

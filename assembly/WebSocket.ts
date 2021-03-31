@@ -5,7 +5,7 @@ declare function closeWS(id: i32, number: number): void
 declare function sendPointer(id: number, event: string, pointer: i32): void
 
 // API
-export class WebSocket {
+export class asWebSocket {
 
   private id: i32 = 0
 
