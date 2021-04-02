@@ -29,9 +29,10 @@ const imports = {
 **AssemblyScript WebSocket**
 
 ```js
-import { asWebSocket } from 'as-ws'
+import { WebSocket } from 'as-ws'
 
-const socket = new asWebSocket('ws://localhost:3000')
+const socket = new WebSocket('ws://localhost:3000')
+// Have a bug going for this :(
 
 socket.on('message', (data) => {
 
@@ -47,4 +48,10 @@ socket.on('listening', () => {
 
 socket.send('Hello From AssemblyScript!')
 
+```
+
+**Browser**
+
+```html
+<script src="https://unpkg.com/as-websocket@latest/browser.js"></script>
 ```
