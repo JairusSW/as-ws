@@ -12,15 +12,15 @@
 
 + let wasmModule
 
-+ const wsImports = require('as-websocket')
++ const ws = require('as-websocket')
 
 const imports = {
-    ...eval(wsImports)
+    ...ws.wasmImports
 }
 
 - const wasmModule = loader.instantaniateSync()
 
-+ wasmModule = loader.instantaniateSync()
++ ws.wasmExports = wasmModule.exports
 
 ```
 
