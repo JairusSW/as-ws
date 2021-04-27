@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "@assemblyscript/loader": "^0.18.19",
-    "assemblyscript": "^0.18.19",
     "ws": "^7.4.4"
   },
   "scripts": {
@@ -11,12 +9,9 @@
     "test": "node tests",
     "start": "node server.js"
   },
-  "devDependencies": {
-    "assemblyscript": "^0.18.16"
-  },
   "name": "as-websocket",
   "description": "WebSocket bindings for AssemblyScript",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "./imports",
   "types": "./assembly/WebSocket.ts",
   "ascMain": "./assembly/WebSocket.ts",
