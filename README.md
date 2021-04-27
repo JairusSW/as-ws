@@ -5,20 +5,17 @@
 
 **Add --exportTable and --exportRuntime flags**
 
-**Edit main file**
-
 ```js
-// main.js
 
-+ let wasmModule
++ const asWebSocket = require('as-websocket')
 
-+ const ws = require('as-websocket')
++ const ws = new asWebSocket()
 
 const imports = {
     ...ws.wasmImports
 }
 
-- const wasmModule = loader.instantaniateSync()
+const wasmModule = loader.instantaniateSync()
 
 + ws.wasmExports = wasmModule.exports
 
@@ -32,7 +29,6 @@ const imports = {
 import { WebSocket } from 'as-ws'
 
 const socket = new WebSocket('ws://localhost:3000')
-// Have a bug going for this :(
 
 socket.on('message', (data) => {
 

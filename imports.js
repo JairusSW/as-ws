@@ -2,7 +2,7 @@ let Websockets = []
 
 const ws = require('ws')
 
-class WakeImport {
+class WebSocketImport {
     
     constructor() {
         
@@ -136,4 +136,4 @@ class WakeImport {
 	}
 }
 
-module.exports = WakeImport
+module.exports = WebSocketImport
